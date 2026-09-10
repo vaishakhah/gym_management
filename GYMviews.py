@@ -95,16 +95,4 @@ class GymMemberManager(Dbconnect):
             print(e)
 
 
-connection_instance = Dbconnect()
-print(connection_instance.get_connected())
-member_instance = GymMemberManager()
-#member_instance.post(name="Anju",place="Kakkand",mobile="9666654321",plan="2 month",fee=2000,joined_date=datetime.today())
-member_instance.get()
-member_instance.get_object()
-print("__________________________")
-member_instance.retrieve(id=2)
-print("____________________________")
-member_instance.delete(id=5)
-member_instance.get()
-member_instance.put(1,place ="Marad")
-member_instance.get()
+#
