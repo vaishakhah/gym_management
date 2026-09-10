@@ -11,11 +11,12 @@ with tab1:
     st.title("ADD MEMBER")
     name = st.text_input("Enter Member name")
     place = st.text_input("Enter Member place")
+    mobile = st.text_input("Enter Member Mobile ")
     plan = st.text_input("Enter Member plan package")
     fee = st.text_input("Enter Member fee package")
-    joined_date = st.text_input("Enter Member Joined date")
+    joined_date = st.date_input("Enter Joined date")
     if st.button("ADDED NEW MEMBER"):
-        member_instance.post(name=name,place=place,plan=plan,fee=fee,joined_date=joined_date)
+        member_instance.post(name=name,place=place,mobile =mobile,plan=plan,fee=fee,joined_date=joined_date)
         st.success("NEW MEMBER ADDED SUCCESSFULLY")
 with tab2:
     st.title("VIEW MEMBER")
